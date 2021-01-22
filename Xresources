@@ -1,0 +1,20 @@
+XTerm*selectToClipboard: true
+XTerm.vt100.geometry: 100x31
+xterm*background:  #fffeeb
+xterm*foreground:  black 
+xterm*cursorColor: #808080	 
+XTerm.termName: xterm-256color
+XTerm.vt100.locale: true
+XTerm*metaSendsEscape: true
+! Lines of output that you can scroll back over
+xterm*saveLines: 4096
+! Do not scroll when there is new input e.g. tail -f /var/syslog
+xterm*scrollTtyOutput: false
+! VT font menu: Medium
+!xterm*font:     *-fixed-*-*-*-18-*
+!XTerm.vt100.faceName: DejaVu Sans Mono:style=Book:antialias=true
+XTerm.vt100.faceName: Hack:style=Regular:antialias=true
+XTerm.vt100.faceSize: 11
+xterm*VT100.Translations: #override \
+                 Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+                 Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
