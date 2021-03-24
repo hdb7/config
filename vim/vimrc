@@ -1,0 +1,65 @@
+"BASIC CONFIG
+"--------------
+"enable file type detection
+filetype plugin indent on
+"no Vi settings only used vim settings
+set nocompatible
+"enable backspace
+set backspace=indent,eol,start
+"history limits 200
+set history=200
+"don't create swapfile
+set noswapfile
+"undo persistence
+set undofile
+set undodir=/tmp
+"enable mouse
+set mouse=a
+"set numberline
+set nu
+
+"EDITING CONFIG
+"---------------
+"Convert tab to spaces
+"tab is expand to 2 spaces
+"indent also is 2 spaces
+set expandtab
+set tabstop=2
+set shiftwidth=2
+
+"set the smart indentation
+set autoindent
+set smartindent
+
+"Search 
+set hlsearch
+set incsearch
+"disable case sensitive while searching
+set ignorecase	
+set smartcase
+"show the position of cursor in file
+set ruler       
+"detect space and tabs
+"set list listchars=nbsp:¬,tab:»·,trail:·,extends:>
+"APPEARANCE
+"syntax highlighting
+syntax on
+"set bg=dark
+"colorscheme solarized
+"enable statusline
+"set laststatus=2        
+"set nu
+
+"MISC CONFIG
+"------------
+let mapleader = "\<space>"
+
+"using leader and h,j,k,l instead of C-w h,j,k,l
+map <leader>h : wincmd h <CR>
+map <leader>j : wincmd j <CR>
+map <leader>k : wincmd k <CR>
+map <leader>l : wincmd l <CR>
+
+"copying and pasting to and from system clipboard
+vnoremap <C-x> "+y
+map <C-y> "+P

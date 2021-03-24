@@ -1,0 +1,19 @@
+" removes toolbar
+set guioptions -=T
+" removes scrollbar
+"set guioptions-=r 
+" font
+set guifont=SF\Mono\ Regular\ 10
+"set geometry
+set lines=100
+set nu
+"UI
+set laststatus=2
+syntax enable
+set cursorline
+"copying and pasting to and from system clipboard
+vnoremap <C-x> "+y
+map <C-y> "+P
+
+" ctrl p settings
+let g:ctrlp_working_path_mode = 'cra'
