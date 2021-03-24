@@ -4,7 +4,7 @@ set guioptions -=T
 "set guioptions-=r 
 " font
 set guifont=SF\Mono\ Regular\ 10
-"set geometry
+"geometry
 set lines=100
 set nu
 "UI
