@@ -12,8 +12,7 @@ xterm*saveLines: 4096
 xterm*scrollTtyOutput: false
 ! VT font menu: Medium
 !xterm*font:     *-fixed-*-*-*-18-*
-!XTerm.vt100.faceName: DejaVu Sans Mono:style=Book:antialias=true
-XTerm.vt100.faceName: Hack:style=Regular:antialias=true
+XTerm.vt100.faceName: DejaVu Sans Mono:style=Book:antialias=true
 XTerm.vt100.faceSize: 11
 xterm*VT100.Translations: #override \
                  Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
