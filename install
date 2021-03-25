@@ -1,0 +1,13 @@
+#!/bin/sh
+
+#remove all the existing config
+[ -d "$HOME/.vim" ] && rm -rf $HOME/.vim
+[ -f "$HOME/.bashrc" ] && rm $HOME/.bashrc
+[ -f "$HOME/.tmux.conf" ] && rm $HOME/.tmux.conf
+[ -f "$HOME/.Xresources" ] && rm $HOME/.Xresources
+
+mkdir $HOME/.vim
+cp -r vim/. $HOME/.vim
+cp bashrc $HOME/.bashrc
+cp tmux.conf $HOME/.tmux.conf
+cp Xresources $HOME/.Xresources
