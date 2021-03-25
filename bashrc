@@ -5,9 +5,6 @@ export PATH=$PATH:/usr/local/go/bin
 # Bash prompt
 #export PS1="[\[\e[33m\]\w\[\e[m\]] "
 export PS1="\h:\w\[\e[32m\]\[\e[m\] % "
-# plan9 from userspace
-PLAN9=/home/hamjak/plan9 export PLAN9
-PATH=$PATH:$PLAN9/bin export PATH
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -30,9 +27,6 @@ alias ls='ls --color'
 alias ll='ls -CFl'
 alias la='ls -al'
 alias l='ls -lh'
-
-# ACME
-alias acme="acme -f /mnt/font/'DejaVuSansMono'/11a/font"
-
+alias grep='grep --color'
 #minimal vim
 alias vi="vim -u NONE"
