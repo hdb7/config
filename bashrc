@@ -3,9 +3,7 @@ export EDITOR=vim
 #GO 
 export PATH=$PATH:/usr/local/go/bin
 # Bash prompt
-#export PS1="[\[\e[33m\]\w\[\e[m\]] "
-export PS1="\h:\w\[\e[32m\]\[\e[m\] % "
-
+export PS1="\[\e[34m\]\W\[\e[m\]\\$ "
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
