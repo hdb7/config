@@ -15,6 +15,7 @@ set undofile
 set undodir=/tmp
 "enable mouse
 set mouse=a
+set ttymouse=xterm2
 "set numberline
 set nu
 
